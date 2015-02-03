@@ -83,19 +83,19 @@ import jcodecollector.util.GeneralInfo;
 import jcodecollector.util.OS;
 import jcodecollector.util.Utility;
 
-import com.explodingpixels.macwidgets.BottomBar;
-import com.explodingpixels.macwidgets.BottomBarSize;
-import com.explodingpixels.macwidgets.MacIcons;
-import com.explodingpixels.macwidgets.MacUtils;
-import com.explodingpixels.macwidgets.MacWidgetFactory;
-import com.explodingpixels.macwidgets.SourceList;
-import com.explodingpixels.macwidgets.SourceListCategory;
-import com.explodingpixels.macwidgets.SourceListContextMenuProvider;
-import com.explodingpixels.macwidgets.SourceListControlBar;
-import com.explodingpixels.macwidgets.SourceListItem;
-import com.explodingpixels.macwidgets.SourceListModelListener;
-import com.explodingpixels.macwidgets.SourceListSelectionListener;
-import com.explodingpixels.macwidgets.UnifiedToolBar;
+import com.jtechdev.macwidgets.BottomBar;
+import com.jtechdev.macwidgets.BottomBarSize;
+import com.jtechdev.macwidgets.MacIcons;
+import com.jtechdev.macwidgets.MacUtils;
+import com.jtechdev.macwidgets.MacWidgetFactory;
+import com.jtechdev.macwidgets.SourceList;
+import com.jtechdev.macwidgets.SourceListCategory;
+import com.jtechdev.macwidgets.SourceListContextMenuProvider;
+import com.jtechdev.macwidgets.SourceListControlBar;
+import com.jtechdev.macwidgets.SourceListItem;
+import com.jtechdev.macwidgets.SourceListModelListener;
+import com.jtechdev.macwidgets.SourceListSelectionListener;
+import com.jtechdev.macwidgets.UnifiedToolBar;
 
 /**
  * La finestra principale dell'applicazione.

@@ -19,14 +19,6 @@ import javax.swing.JDialog;
 
 import jcodecollector.gui.MainFrame;
 
-import com.apple.eawt.AboutHandler;
-import com.apple.eawt.AppEvent.AboutEvent;
-import com.apple.eawt.AppEvent.AppReOpenedEvent;
-import com.apple.eawt.AppEvent.QuitEvent;
-import com.apple.eawt.AppReOpenedListener;
-import com.apple.eawt.Application;
-import com.apple.eawt.QuitHandler;
-import com.apple.eawt.QuitResponse;
 
 /**
  * Migliora l'integrazione dell'applicazione con Mac OS X usando le
@@ -37,6 +29,7 @@ import com.apple.eawt.QuitResponse;
  */
 public class MacUtilities {
 
+// 	  TODO: test in mac	
 //    private MainFrame mainFrame;
 
 //    public void setMainFrame(MainFrame mainFrame) {
@@ -48,31 +41,6 @@ public class MacUtilities {
     }
 
     public void installMacUtilities(final MainFrame mainFrame) {
-        Application application = Application.getApplication();
-
-        // open about window
-        application.setAboutHandler(new AboutHandler() {
-            public void handleAbout(AboutEvent e) {
-                JDialog aboutWindow = mainFrame.getAboutWindow();
-                aboutWindow.setLocationRelativeTo(mainFrame);
-                aboutWindow.setVisible(true);
-            }
-        });
-
-        // CMD+Q
-        application.setQuitHandler(new QuitHandler() {
-            public void handleQuitRequestWith(QuitEvent e, QuitResponse r) {
-                mainFrame.prepareAndSaveSettings();
-                System.exit(0);
-            }
-        });
-
-        // re-open when main window is not visible
-        application.addAppEventListener(new AppReOpenedListener() {
-            public void appReOpened(AppReOpenedEvent e) {
-                mainFrame.setVisible(true);
-            }
-        });
     }
 
 }
